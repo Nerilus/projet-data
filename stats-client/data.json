@@ -1,0 +1,19 @@
+[
+    {
+      "user_id": "123",
+      "track_name": "Track 1",
+      "artist_name": "Artist 1",
+      "playback_time": "2023-01-01 12:34:56",
+      "duration_ms": 210000,
+      "is_skipped": false
+    },
+    {
+      "user_id": "456",
+      "track_name": "Track 2",
+      "artist_name": "Artist 2",
+      "playback_time": "2023-01-02 14:30:00",
+      "duration_ms": 180000,
+      "is_skipped": true
+    }
+  ]
+  

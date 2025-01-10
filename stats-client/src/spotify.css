@@ -1,0 +1,164 @@
+/* ======== Global Styles ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+  
+  h3 {
+    color: #2c3e50;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  /* ======== Tracks Table Styles ======== */
+  .tracks-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px; /* Space between rows */
+    margin-top: 30px;
+  }
+  
+  .tracks-table thead {
+    background-color: transparent;
+  }
+  
+  .tracks-table th {
+    font-size: 1rem;
+    text-align: left;
+    padding: 15px;
+    color: #fff;
+    background-color: #2c3e50; /* Header background */
+    text-transform: uppercase;
+    border-radius: 8px 8px 0 0; /* Rounded top border */
+  }
+  
+  .tracks-table tbody tr {
+    background-color: #ffffff; /* Row background */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .tracks-table tbody tr:hover {
+    transform: scale(1.02); /* Slight zoom on hover */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+  }
+  
+  .tracks-table td {
+    padding: 15px;
+    font-size: 0.95rem;
+    color: #333;
+    text-align: left;
+    border-bottom: none;
+  }
+  
+  .tracks-table td:last-child {
+    text-align: right; /* Align actions to the right */
+  }
+  
+  .tracks-table td a {
+    color: #3498db; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease;
+  }
+  
+  .tracks-table td a:hover {
+    color: #1abc9c; /* Change color on hover */
+  }
+  
+  .tracks-table tr:last-child td {
+    border-radius: 0 0 8px 8px; /* Rounded bottom border */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .tracks-table th,
+    .tracks-table td {
+      font-size: 0.85rem;
+      padding: 10px;
+    }
+  }
+  
+  /* ======== Modal Styles ======== */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .modal-content h3 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .modal-content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .modal-content ul li {
+    margin-bottom: 10px;
+  }
+  
+  .close-modal-btn {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .close-modal-btn:hover {
+    background-color: #c0392b;
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
